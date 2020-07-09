@@ -53,6 +53,11 @@ main{
     background-color: #ECE2C6;
 }
 
+main section ul{
+    margin: 0px;
+    list-style: none;
+}
+
 footer{
     display: flex;
     flex-direction: column;
@@ -125,6 +130,13 @@ footer nav ul li a{
     text-align: center;
 }
 
+.subtitle{
+    display: block;
+    background-color: #D9CCAC;
+    text-align: center;
+    padding: 0.5em 1em;
+}
+
 .row{
     width: 100%;
     display: flex;
@@ -139,9 +151,10 @@ footer nav ul li a{
 }
 
 [class*=col-]{
-    box-sizing: flex;
+    display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    box-sizing: border-box;
     padding: 0.5em 0.5em;
     margin: 0px;
 }
@@ -163,7 +176,7 @@ footer nav ul li a{
 }
 
 .col-sm-5{
-    flex-basis: calc(100%/12*5);
+    flex-basis: calc(100%/12 * 5);
 }
 
 .col-sm-6{
@@ -171,27 +184,27 @@ footer nav ul li a{
 }
 
 .col-sm-7{
-    flex-basis: calc(100%/12*7);
+    flex-basis: calc(100%/12 * 7);
 }
 
 .col-sm-8{
-    flex-basis: calc(100%/12*8);
+    flex-basis: calc(100%/12 * 8);
 }
 
 .col-sm-9{
-    flex-basis: calc(100%/12*9);
+    flex-basis: calc(100%/12 * 9);
 }
 
 .col-sm-10{
-    flex-basis: calc(100%/12*10);
+    flex-basis: calc(100%/12 * 10);
 }
 
 .col-sm-11{
-    flex-basis: calc(100%/12*11);
+    flex-basis: calc(100%/12 * 11);
 }
 
 .col-sm-12{
-    flex-basis: calc(100%);
+    flex-basis: 100%;
 }
 
 
