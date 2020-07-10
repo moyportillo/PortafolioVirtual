@@ -19,8 +19,6 @@ header h1{
     color: #FFFFFF;
 }
 
-
-
 header nav ul{ 
     display: block;
     margin: 0px;
@@ -48,7 +46,7 @@ header nav ul li a:hover{
 main{
     margin: 0px;
     padding: 0px;
-    background-color: #ECE2C6;
+    background-color: #ffffff;
 }
 
 main section ul{
@@ -134,6 +132,7 @@ footer nav ul li a{
     text-align: center;
 }
 
+
 .subtitle{
     display: block;
     background-color: #D9CCAC;
@@ -141,6 +140,23 @@ footer nav ul li a{
     padding: 1em;
     margin: 0px;
 }
+
+.transpose-place{
+    transform: translate(-32px, 35px);
+    background-color: rgba(31, 40, 76, 0.774);
+    border-radius: 5%;
+    height: 190px;
+    color: #ffffff;
+    box-shadow: 1px 1px 4px #212121;
+    text-align: center;
+}
+
+.background-block{
+    background-color: #212121;
+    color: #ECE2C6;
+}
+
+
 
 .row{
     width: 100%;
