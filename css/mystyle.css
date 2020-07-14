@@ -4,6 +4,7 @@ body{
     margin: 0px;
     padding: 0px;
     font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
 }
 
 header{
@@ -43,6 +44,12 @@ header nav ul li a:hover{
     transition: backround-color 0.7s ease, color 0.7s ease;
 }
 
+a{
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
 main{
     margin: 0px;
     padding: 0px;
@@ -59,6 +66,9 @@ main h3{
     padding: 0.5em;
 }
 
+h2{
+    font-size: 2em;
+}
 
 footer{
     display: flex;
@@ -133,22 +143,12 @@ footer nav ul li a{
 }
 
 
-.subtitle{
+[class*=subtitle-]{
     display: block;
     background-color: #D9CCAC;
     text-align: center;
-    padding: 1em;
+    padding: 1.5em;
     margin: 0px;
-}
-
-.transpose-place{
-    transform: translate(-32px, 35px);
-    background-color: rgba(31, 40, 76, 0.774);
-    border-radius: 5%;
-    height: 190px;
-    color: #ffffff;
-    box-shadow: 1px 1px 4px #212121;
-    text-align: center;
 }
 
 .background-block{
@@ -233,16 +233,54 @@ img{
     max-width: 100%;
 }
 
+.transpose-place{
+    display: inline-block;
+    transform: translate(0px, -45px);
+    background-color: rgba(31, 40, 76, 0.774);
+    border-radius: 10%;
+    color: #ffffff;
+    box-shadow: 1px 1px 4px #212121;
+    text-align: center;
+}
+
+.subtitle-laboral{
+    background-image: url("../imgs/laboral.jpg");
+    background-size: 100%;
+    text-align: left;
+}
+
+.cardholder{
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #fff;
+}
+
+[class*=card_] {
+    box-sizing: border-box;
+    padding: 1em;
+    background-color: #fff;
+  }
+
+  .card_0 {
+    width: 45%;
+    box-shadow: 3px 3px 3px #333;
+    margin: calc(5%/4);
+  }
+  
+  .card_1 {
+    width: 70%;
+    border-radius: 5px;
+    box-shadow: 3px 3px 9px #333;
+    background-color: #2D4472;
+    margin: 0.5em;
+  }
+
+  
+
 @media (min-width:768px){
     
-    [class*=col-]{
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        box-sizing: border-box;
-        padding: 1em 1.5em;
-        margin: 0px;
-    }
     
     .col-md-1{
         flex-basis: calc(100%/12);
